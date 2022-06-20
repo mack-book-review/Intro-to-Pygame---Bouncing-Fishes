@@ -12,15 +12,6 @@ RED = (255,0,0)
 GREEN = (0,255,0)
 BLUE = (0,0,255)
 
-fish_image = pygame.image.load("fish.png")
-fish_rect = fish_image.get_rect()
-fish_rect.center = (width//2,height//2)
-
-
-speed = pygame.math.Vector2(0,5)
-rotation = random.randint(0,360)
-speed.rotate_ip(rotation)
-fish_image = pygame.transform.rotate(fish_image,180-rotation)
 
 
 def move_fish():
